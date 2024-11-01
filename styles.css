@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.header {
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(27, 26, 26);
+  flex-wrap: wrap;
+  border-bottom: solid white 2px;
+}
+.header .logo {
+  width: 25%;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.header .nav-menu {
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header .nav-menu a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+.header .nav-menu a:hover {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.header .button {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+}
+.header .button button {
+  margin-top: 20px;
+  background-color: red;
+  width: 100px;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.header .button button:hover {
+  transform: scale(1.1);
+  background-color: rgb(172, 2, 2);
+}
+
+.heroSection {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2px;
+  height: 100vh;
+  width: 100%;
+  background: url(https://image.slidesdocs.com/responsive-images/background/dark-3d-rendering-of-gym-equipment-powerpoint-background_813a9f6026__960_540.jpg);
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+.heroSection p {
+  font-size: 25px;
+  color: white;
+}
+.heroSection h2 {
+  margin-top: -10px;
+  color: red;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 80px;
+  text-shadow: white 2px 0 0;
+}
+.heroSection p:first-child {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.heroSection p:last-child {
+  background-color: black;
+  margin-bottom: 20px;
+}
+.heroSection button {
+  margin-top: 20px;
+  background-color: red;
+  width: 100px;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.gym-health {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100%;
+  overflow: visible;
+}
+.gym-health .inner-div {
+  position: relative;
+  z-index: 20;
+  transform: translateY(-150px);
+  width: 70%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.gym-health .inner-div .gym-section {
+  border: 2px solid red;
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  justify-content: end;
+  background: url("./medium-gym-posters-gym-posters-m.jpg") no-repeat center center;
+  background-size: cover;
+}
+.gym-health .inner-div .gym-section h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  filter: drop-shadow(black 0 0 10px);
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.gym-health .inner-div .health-section {
+  border: 2px solid red;
+  border-radius: 20px;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  justify-content: end;
+  background: url("./middle-aged-male-fitness-trainer.jpg") no-repeat center center;
+  background-size: cover;
+}
+.gym-health .inner-div .health-section h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  filter: drop-shadow(black 0 0 10px);
+  background-color: rgba(0, 0, 0, 0.404);
+}
+.gym-health .inner-div button {
+  margin-top: 20px;
+  background-color: red;
+  width: 100px;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  filter: drop-shadow(black 0 0 10px);
+}
+.gym-health .inner-div button:hover {
+  transform: scale(1.1);
+  background-color: rgb(172, 2, 2);
+}
+
+.about-Section {
+  margin-top: -50px;
+  padding: 10px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.about-Section h2 {
+  font-size: 40px;
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+}
+.about-Section .inner-Section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.about-Section .inner-Section .image {
+  display: flex;
+  justify-content: end;
+}
+.about-Section .inner-Section .image img {
+  border-radius: 20px;
+}
+.about-Section .inner-Section .text p {
+  text-align: start;
+  text-justify: center;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.foo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  padding: 30px 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.foo-container .foo-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  row-gap: 10px;
+}
+.foo-container .foo-item h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: white;
+}
+.foo-container .foo-item:last-child {
+  row-gap: 10px;
+}
+.foo-container .foo-item:last-child button {
+  margin-top: 20px;
+  background-color: red;
+  width: 100px;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: black;
+}
+.foo-container .foo-item:last-child button:hover {
+  transform: scale(1.1);
+  background-color: rgb(172, 2, 2);
+}
+
+.workoutsPage {
+  height: 50dvh;
+}
+.workoutsPage h2 {
+  color: white;
+}
+.workoutsPage h4 {
+  color: black;
+  background-color: white;
+  size: 60px;
+  padding: 15px;
+}
+
+.videosSec {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 80px;
+}
+
+.boxes {
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.boxes h5 {
+  color: black;
+  font-size: 30px;
+}
+
+.nut-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 60px 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
+}
+.nut-container .nut-box {
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 20px;
+}
+.nut-container .nut-box img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.nut-container .nut-box h3 {
+  font-size: 25px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 60px 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 40px;
+}
+.gallery-container .gallery-box {
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 20px;
+}
+.gallery-container .gallery-box img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.gallery-container .gallery-box h3 {
+  font-size: 25px;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: scale(1.03);
+}
+
+.textSection {
+  padding: 20px;
+}
+
+.contact-form label {
+  color: #FF5555;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #FF5555;
+  border-radius: 8px;
+  font-size: 15px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #FF3333;
+  box-shadow: 0 0 8px rgba(255, 85, 85, 0.7);
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #FF5555, #FF2222);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #FF2222;
+  transform: translateY(-3px);
+}/*# sourceMappingURL=styles.css.map */
